@@ -16,7 +16,7 @@ int solution(int n) {
         num2 = fib;
     }
     
-    answer = fib % 1234567;
+    answer = fib;
     
     return answer;
 }
