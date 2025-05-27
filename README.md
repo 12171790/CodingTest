@@ -916,3 +916,172 @@ b = 14
 print(math.gcd(21, 14)) # 최대 공약수 gcd 계산
 print(lcm(a, b)) # 최소 공배수 lcm 계산
 ```
+# Java 공부
+# ✨ 입력
+
+```jsx
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		// 10, 20, 30 입력
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(st.nextToken());
+	}
+}
+```
+
+# ✨ 출력
+
+```jsx
+// 기본
+System.out.println("정답 : " = answer);
+
+// 빠른 출력
+StringBuilder sb = new StringBuilder();
+sb.append("1\n");
+sb.append("2\n");
+System.out.println(sb.toString());
+```
+
+# ✨ 문자열 처리
+
+```jsx
+String str = "hello world";
+str.length(); // 문자열 길이
+str.charAt(0); // 첫번재 문자
+str.substring(0, 5)); // hello
+str.split(" ")[1]; // world
+str.equals("abc"); // 문자열 비교
+str.contains("abc"): // 문자열 포함 여부
+str.indexOf("o"); // 문자열 찾기
+str.replace("a", "b") // 문자열 치환
+str.split(" "); // 문자열 나누기
+
+StringBuilder sb = new StringBuilder();
+sb.append(str);
+
+System.out.println(sb.toString());
+```
+
+# ✨ 배열 입력 처리
+
+```jsx
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+int n = Integer.parseInt(br.readLine());
+int[] arr = new int[n];
+StringTokenizer st = new StringTokenizer(br.readLine();
+
+for (int i = 0; i < n; i++)
+{
+	arr[i] = Integer.parseInt(st.nextToken());
+}
+```
+
+# ✨char 배열 or 문자 입력 처리
+
+```jsx
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String str = br.readLine();
+char[] chars = str.toCharArray();
+
+for (char c : chars)
+{
+	System.out.println(c);
+}
+```
+
+## 😎 연습 문제
+
+```jsx
+import java.io.*
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int[] arr = new int[3];
+		int sum = 0;
+		
+		for (int i = 0; i < 3; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+			sum += arr[i];
+		}
+		
+		System.out.print(sum);
+	}
+}
+```
+
+```jsx
+import java.io.*;
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		StringBuilder sb = new StringBuilder();
+		int n = 5;
+		
+		for (int i = 1; i < n + 1; i++)
+		{
+			sb.append(i).append("\n");
+		}
+		
+		System.out.print(sb.toString());
+		
+	}
+}
+```
+
+```jsx
+import java.util.*;
+import java.io.*;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		StringBuilder sb = new StringBuilder(st.nextToken());
+		
+		System.out.println("길이: " + sb.length());
+		
+		for (int i = 0; i < 3; i++) {
+			System.out.print(sb.charAt(i));
+		}
+		
+		String[] arr = sb.toString().split(" ");
+		
+		for (int i = 0; i < arr.length(); i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}
+```
+
+```jsx
+import java.util.*;
+import java.io.*;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		StringBuilder sb = new StringBuilder();
+		
+		for (int i = 0; i < 5; i++) {
+			sb.append(st.nextToken()).append("\n");
+		}
+		
+		System.out.print(sb);
+	}
+}
+```
